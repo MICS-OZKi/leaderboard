@@ -8,7 +8,7 @@
     "setup": "./bin/setup",
     "build": "next build",
     "lint": "next lint",
-    "install-deps": "npm install ../ozki-toolkit/ozki-toolkit-1.2.6.tgz && npm install",
+    "install-deps": "npm install ../ozki-toolkit/ozki-toolkit-1.2.7.tgz && npm install",
     "test": "jest --watch"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "@mui/material": "^5.9.0",
     "@types/copy-webpack-plugin": "^10.1.0",
     "next": "12.2.2",
-    "ozki-toolkit": "file:../ozki-toolkit/ozki-toolkit-1.2.6.tgz",
+    "ozki-toolkit": "file:../ozki-toolkit/ozki-toolkit-1.2.7.tgz",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

@@ -5,6 +5,7 @@ import leaderboardData from "utils/data";
 import serverPath from "utils/helper";
 import ProofVerifier  from "ozki-toolkit";
 import { ProofRequiredOutput } from "ozki-toolkit";
+import { parse } from "path";
 
 export interface ParsedAnswerInfo {
     answerNo:       number;
@@ -48,6 +49,7 @@ export class ProofOfHashVerifier extends ProofVerifier<ParsedAnswerInfo> {
     private parseOutputInternal(publicSignals: any) {
         this.timeStamp  = Number.parseInt(publicSignals[0]);
         this.number = Number.parseInt(publicSignals[1]);
+        console.log("#### parseOutputInternal: number=%d, timestamp=%d", this.number, this.timeStamp);
 
         for (let i = 0; i < (publicSignals.length - 2); i++)
             this.hash.push(BigInt(publicSignals[2 + i]));
