@@ -8,6 +8,7 @@
     "setup": "./bin/setup",
     "build": "next build",
     "lint": "next lint",
+    "install-deps": "npm install ../ozki-toolkit/ozki-toolkit-1.2.6.tgz && npm install",
     "test": "jest --watch"
   },
   "dependencies": {
